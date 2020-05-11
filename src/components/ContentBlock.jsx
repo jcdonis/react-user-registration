@@ -9,6 +9,7 @@ const ContentBlock = () => {
 
   if (!users) {
     localStorage.setItem("users", JSON.stringify([]));
+    users = [];
   }
 
   const [userState, setUserState] = useState({
